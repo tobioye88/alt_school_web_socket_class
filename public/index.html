@@ -124,13 +124,13 @@
         e.preventDefault();
         if (input.value) {
           console.log(input.value);
-          socket.emit('newMessage', input.value);
+          socket.emit('newMessage', input.value, phone);
           input.value = '';
         }
       });
     }
 
-    const phone = prompt("Enter your phone number");
+    phone = prompt("Enter your phone number");
     if (phone) {
       startChat(phone);
     }

@@ -18,9 +18,9 @@ io.on("connection", (socket) => {
   phone_number;
   socket.emit("chatMessage", phone_number + " joined our chat room");
 
-  socket.on("newMessage", (data) => {
-    console.log("newMessage", data);
-    io.emit("chatMessage", data);
+  socket.on("newMessage", (data, phone) => {
+    console.log("newMessage", `${phone}: ${data}`);
+    io.emit("chatMessage", `${phone}: ${data}`);
   });
 
   socket.on("typing", (data) => {
