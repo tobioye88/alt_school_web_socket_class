@@ -18,3 +18,8 @@ SERVER -> CLIENT -> SERVER
 3. Integrate Socket.io -
 4. Broadcast message and receive on another client
 5. Take Home: Extend chat to show username and create private rooms/chats
+
+## Links
+
+https://socket.io/
+https://www.scaler.com/topics/expressjs-tutorial/express-websocket/
